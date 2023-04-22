@@ -24,12 +24,22 @@ body {
   color: #ffffff;
 }
 
+.header-link:hover,
+.header-link:focus {
+    color: #FF6C00;
+}
+
 .header-tel {
   font-weight: 600;
   font-size: 12px;
   line-height: calc(16 / 12);
   letter-spacing: 0.1em;
   color: #ffffff;
+}
+
+.header-tel:hover,
+.header-tel:focus {
+    color: #FF6C00;
 }
 
 .header-btn {
@@ -54,6 +64,11 @@ body {
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
   color: #303030;
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: #FF6C00;
 }
 
 .hero-pre-title {
