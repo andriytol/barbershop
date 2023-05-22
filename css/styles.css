@@ -93,6 +93,11 @@ img {
   line-height: calc(16 / 12);
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  background-color: transparent;
+  min-width: 160px;
+  height: 40px;
 }
 
 /* -------------------------------------HEADER */
@@ -101,6 +106,25 @@ img {
   background-color: gray;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 131px;
+}
+
+.header-list {
+  display: flex;
+  gap: 30px;
 }
 
 .header-link {
@@ -114,6 +138,10 @@ img {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-connect {
+  margin-left: auto;
 }
 
 .header-tel {
@@ -131,12 +159,27 @@ img {
 
 .header-btn {
   color: var(--main-btn-color);
+  margin-left: 43px;
 }
 
 /* -------------------------------------HERO */
 
 .hero {
   background-color: gray;
+}
+
+.hero-container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+}
+
+.hero-wrap {
+  background-color: #3d3e45;
+  padding: 272px 100px 208px 100px;
+  flex-grow: 1;
 }
 
 .hero-link {
@@ -169,6 +212,20 @@ img {
 }
 
 /* -------------------------------------ABOUT */
+
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  max-width: 470px;
+}
 
 .about-pre-title {
   color: #303030;
@@ -217,9 +274,24 @@ img {
   margin-bottom: 44px;
 }
 
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
 .prices-list {
   border: 1px solid #fff;
   padding: 30px 20px;
+  width: calc((100% - 30px) / 2);
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.prices-item + .prices-item {
+  margin-top: 20px;
 }
 
 .prices-list-text {
@@ -303,9 +375,12 @@ img {
 }
 
 .barbers-list {
+  display: flex;
+  gap: 30px;
 }
 
 .barbers-item {
+  width: calc((100% - 60px) / 2);
 }
 
 .barbers-wrap {
@@ -335,6 +410,10 @@ img {
 .gallery-pre-title {
   color: #303030;
   margin-bottom: 20px;
+}
+
+.gallery-list {
+  display: flex;
 }
 
 /* -------------------------------------ONLINE */
